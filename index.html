@@ -10,6 +10,7 @@
 
         .header {
             display: flex;
+            align-items: center;
             width: 100%;
             height: 168px;
             background: #454C55;
@@ -17,8 +18,6 @@
         }
 
         .logo {
-            margin-top: 64px;
-            margin-bottom: 30px;
             margin-left: 378px;
             width: 242px;
             height: 74px;
@@ -78,6 +77,14 @@
         }
 
         @media only screen and (max-width: 1160px) {
+            .header {
+                height: 80px;
+            }
+            .logo {
+                width: 121px;
+                height: 37px;
+                margin-left: 20px;
+            }
             .body {
                 flex-direction: column;
                 height: initial;
