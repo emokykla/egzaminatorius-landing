@@ -8,6 +8,7 @@
         body {
             margin: 0;
             font-family: "Open Sans";
+            background: linear-gradient(180deg, rgba(116, 197, 189, 0.90) -12.89%, rgba(206, 246, 242, 0.90) 70%) fixed;
         }
 
         .header {
@@ -18,6 +19,12 @@
             height: 168px;
             background: #454C55;
             flex-shrink: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
         }
         
         .logo-container {
@@ -36,8 +43,6 @@
             flex-direction: row;
             justify-content: center;
             width: 100%;
-            height: calc(100vh - 168px);
-            background: linear-gradient(180deg, rgba(116, 197, 189, 0.90) -12.89%, rgba(206, 246, 242, 0.90) 59.45%);
         }
 
         .text {
@@ -52,6 +57,10 @@
             font-style: normal;
             font-weight: 400;
             line-height: 26px; /* 144.444% */
+        }
+        
+        .text-block.text-block-last {
+            margin-bottom: 30px;
         }
 
         .text-header {
@@ -96,55 +105,65 @@
             }
 
             .text {
+                max-width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
                 align-content: center;
                 justify-content: center;
             }
 
             .text-art {
-                margin-top: 30px;
+                margin-top: 50px;
+                margin-bottom: 32px;
+            }
+
+            .text-block.text-block-last {
+                margin-bottom: 0;
             }
         }
     </style>
 </head>
 <body>
-<div class="header">
-    <div class="logo-container">
-        <img src="/logo.png" class="logo" alt="logo">
+<div class="container">
+    <div class="header">
+        <div class="logo-container">
+            <img src="/logo.png" class="logo" alt="logo">
+        </div>
     </div>
-</div>
-<div class="body">
-    <div class="text">
-        <div class="text-header">Atsiprašome, puslapio, kurio ieškote, nėra</div>
-        <div class="text-block">
+    <div class="body">
+        <div class="text">
+            <div class="text-header">Atsiprašome, puslapio, kurio ieškote, nėra</div>
+            <div class="text-block">
             <span>Elektroninės mokymosi aplinkos kūrėjai praneša, kad nuo <strong>2024 m. liepos 31 d.</strong> buvo priimtas sprendimas uždaryti elektroninę mokymosi aplinką
                 „Egzaminatorius.lt“.</span>
+            </div>
+            <div class="text-block">
+                Informuojame, kad viduriniam koncentrui reikalingą mokymosi turinį toliau vystysime elektroninėje mokymosi aplinkoje <a href="https://eduka.lt"
+                                                                                                                                        class="link">„EDUKA
+                klasė“</a> Šiuo metu „EDUKA
+                klasėje“ galima rasti beveik 30 vadovėlių 11–12 klasėms, daugiau negu 20 užduočių rinkinių, skirtų įvairiems mokomiesiems dalykams.
+            </div>
+            <div class="text-block">
+                Pranešame, kad skaitmeninėje mokymo(si) aplinkoje „EDUKA klasė“ 2024–2025 mokslo metams planuojama turėti pagal atnaujintas BP sukurtų naujų
+                leidyklos
+                „Šviesa“ 11 klasės literatūros ir matematikos vadovėlių skaitmenines versijas, papildytas skaitmeniniu turiniu ir užduočių rinkiniais.
+            </div>
+            <div class="text-block">
+                Taip pat 11 ir 12 klasės literatūros, matematikos ir biologijos konspektus (papildytus skaitmeniniu turiniu), skirtus pasirengti I ir II egzamino
+                dalims. Naujas skaitmeninis turinys remiasi ne tik atnaujintomis Bendrosiomis programomis, bet ir elektroninės mokymosi aplinkos Egzaminatorius.lt
+                gerąja patirtimi, mokytojų pamėgtu turiniu, funkcijomis ir galimybėmis.
+                Daugiau informacijos: <a href="https://eduka.lt" class="link">www.eduka.lt</a>
+            </div>
+            <div class="text-block">
+                <strong>Turite klausimų?</strong><br/>
+                Kilus klausimų rašykite el. paštu: pardavimai@ateitiespamoka.lt.
+            </div>
+            <div class="text-block text-block-last">
+                „Egzaminatorius.lt“ komanda
+            </div>
         </div>
-        <div class="text-block">
-            Informuojame, kad viduriniam koncentrui reikalingą mokymosi turinį toliau vystysime elektroninėje mokymosi aplinkoje <a href="https://eduka.lt"
-                                                                                                                                    class="link">„EDUKA
-            klasė“</a> Šiuo metu „EDUKA
-            klasėje“ galima rasti beveik 30 vadovėlių 11–12 klasėms, daugiau negu 20 užduočių rinkinių, skirtų įvairiems mokomiesiems dalykams.
-        </div>
-        <div class="text-block">
-            Pranešame, kad skaitmeninėje mokymo(si) aplinkoje „EDUKA klasė“ 2024–2025 mokslo metams planuojama turėti pagal atnaujintas BP sukurtų naujų
-            leidyklos
-            „Šviesa“ 11 klasės literatūros ir matematikos vadovėlių skaitmenines versijas, papildytas skaitmeniniu turiniu ir užduočių rinkiniais.
-        </div>
-        <div class="text-block">
-            Taip pat 11 ir 12 klasės literatūros, matematikos ir biologijos konspektus (papildytus skaitmeniniu turiniu), skirtus pasirengti I ir II egzamino
-            dalims. Naujas skaitmeninis turinys remiasi ne tik atnaujintomis Bendrosiomis programomis, bet ir elektroninės mokymosi aplinkos Egzaminatorius.lt
-            gerąja patirtimi, mokytojų pamėgtu turiniu, funkcijomis ir galimybėmis.
-            Daugiau informacijos: <a href="https://eduka.lt" class="link">www.eduka.lt</a>
-        </div>
-        <div class="text-block">
-            <strong>Turite klausimų?</strong><br/>
-            Kilus klausimų rašykite el. paštu: pardavimai@ateitiespamoka.lt.
-        </div>
-        <div class="text-block">
-            „Egzaminatorius.lt“ komanda
-        </div>
+        <img class="text-art" src="/searching.svg" alt="">
     </div>
-    <img class="text-art" src="/searching.svg" alt="">
 </div>
 </body>
 </html>
